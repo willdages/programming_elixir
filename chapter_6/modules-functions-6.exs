@@ -11,3 +11,6 @@ defmodule Chop do
   def guess(answer, guess, _..high) when answer > guess, do: guess(answer, guess..high)
 
 end
+
+IO.puts "Trying to guess 273 between 1 and 1000"
+Chop.guess(273, 1..1000)
